@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AskMyIdentity</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- righteous google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display: "righteous", "sans-serif";
+
+        --color-white: #fff;
+        --color-highlight: #0E38CD;
+        --color-cardfont: #324361;
+        --color-gray: #4A4A4A;
+        --color-subsbtn: #0E38CD;
+        --color-signbtnL: #083F9B;
+        --color-signbtnR: #7F56D9;
+        --color-headerbgL: #04016C;
+        --color-headerbgR: #4A16BD;
+        --color-learnbgL: #739FE8;
+        --color-learnbgR: #4F18CA;
+        --color-footerL: #477AE3;
+        --color-footerR: #931BBD;
+        --color-socialbgL: #2E08C7;
+        --color-socialbgR: #7E08C7;
+        --color-num: #2AAA94;
+      }
+    </style>
+  </head>
+  <body class="font-display w-screen">
+    <!-- <h1 class="text-4xl text-white font-display bg-linear-to-r from-signbtnL to-signbtnR">hello world</h1> -->
+
+    <!-- highlight #0E38CD;
+    header bg #04016C #4A16BD;
+    num #2AAA94;
+    nav btn #083F9B  #7F56D9;
+    search,explore #3023B2 #7F56D9;
+    social bg #2E08C7 #7E08C7;
+    card font #324361;
+    subs #0E38CD;
+    learn bg #739FE8 #4F18CA;
+    footer #477AE3 #931BBD;
+    gray #4A4A4A; -->
+
+    <header>
+    <div class="flex flex-row items-center gap-12 justify-between">
+    <img src="./assets/Askmeidentity 2.png" alt="logo" class="h-[8rem] ">
+    <div class="flex items-center gap-24 px-8">
+        <ul class="flex gap-8 px-4">
+            <li>Home</li>
+            <li>About</li>
+            <li>Courses</li>
+            <li>Contact</li>
+        </ul>
+        <div class="flex gap-4 relative">
+            <img src="./assets/Icon.png" alt="cart" class="w-7 h-7">
+            <div class="absolute rounded-full flex justify-center bg-num w-4 text-white text-xs left-5 bottom-4">0</div>
+            <img src="./assets/Icon (1).png" alt="people" class="w-7 h-7">
+            <img src="./assets/Icon (4).png" alt="search" class="w-7 h-7">
+        </div>
+        <div class="flex items-center gap-6 px-4">
+            <p class="underline text-gray text-md ">Login</p>
+            <p class="bg-linear-to-r from-signbtnL to-signbtnR rounded-md p-2 px-6 text-white">Signup</p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </header>
+
+    <div class="flex justify-between bg-linear-to-r from-headerbgL to-headerbgR">
+        <div class="text-white">
+        <p>Successful coaches are visionaries</p>
+        <h1>Good <span class="text-highlight">coaching</span> is good teaching & nothing else.</h1>
+        <button>View Courses</button>
+        <p>Get Free Consultation</p>
+        </div>
+        <div>
+            <img src="./assets/brunette-woman-hugging-laptop_1.png" alt="img">
+        </div>
+    </div>
+  </body>
+</html>
