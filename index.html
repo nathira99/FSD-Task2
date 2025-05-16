@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AskMyIdentity</title>
+    <!-- font-awesomwe-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -43,6 +45,31 @@
         --color-catgT: #FBFDFF;
         
       }
+
+      .menu-list {
+  display: none;
+  font-family: rowdies;
+  font-weight: lighter;
+  position: absolute;
+  right: 10px;
+  top: 85px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 15%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menu-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu:hover .menu-list{
+    display: block;
+    background-color: #ddd;
+}
+
     </style>
   </head>
   <body class="font-righteous w-full">
@@ -61,8 +88,8 @@
 
     <header class="grid grid-cols-7 place-items-center">
     <img src="./assets/Askmeidentity 2.png" alt="logo" class="col-span-2 col-start-1 h-[8rem] max-md:col-span-4 max-sm:col-span-5">
-    <div class="grid col-span-2">
-        <ul class="grid grid-cols-4 max-lg:hidden">
+    <div class="grid col-span-2 max-lg:hidden">
+        <ul class="grid grid-cols-4">
             <!-- <img src="./assets/Back Arrow.png" alt="" class=""> -->
             <li class="px-4">Home</li>
             <li class="px-4">About</li>
@@ -79,6 +106,17 @@
         <div class="grid grid-cols-2 col-span-2 px-4 place-items-center font-saira max-lg:hidden">
             <p class="hover:underline text-gray px-10 text-md cursor-pointer">Login</p>
             <p class="bg-linear-to-r from-signbtnL to-signbtnR rounded-md p-2 px-6 text-white cursor-pointer">Signup</p>
+        </div>
+        <div class="menu">
+         <a href="" class="icon min-lg:hidden absolute right-10 ">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="menu-list ">
+            <li class="">Home</li>
+            <li class="">About</li>
+            <li class="">Courses</li>
+            <li class="">Contact</li>
+        </ul>
         </div>
     </div>
     </header>
